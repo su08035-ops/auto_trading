@@ -1,0 +1,303 @@
+{
+  "runs": [
+    {
+      "id": "실험9_huber-action-5pct",
+      "label": "실험9_huber-action-5pct",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-09T15:39:14.061041+00:00",
+      "best_episode": 46,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | 25.66% | 39.27% | 0.595 | 0.886 | 217 | 43.024 | 14.717 |",
+      "paths": {
+        "ohlcv": "/results/실험9_huber-action-5pct/ohlcv.csv",
+        "trades": "/results/실험9_huber-action-5pct/test/agent_trades.csv",
+        "equity": "/results/실험9_huber-action-5pct/test/equity.csv",
+        "metrics": "/results/실험9_huber-action-5pct/test/metrics.json",
+        "summary": "/results/실험9_huber-action-5pct/summary.md"
+      }
+    },
+    {
+      "id": "실험8_huber-action-10pct",
+      "label": "실험8_huber-action-10pct",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-09T15:37:14.102144+00:00",
+      "best_episode": 46,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | 30.04% | 35.23% | 0.665 | 1.014 | 277 | 56.734 | 11.640 |",
+      "paths": {
+        "ohlcv": "/results/실험8_huber-action-10pct/ohlcv.csv",
+        "trades": "/results/실험8_huber-action-10pct/test/agent_trades.csv",
+        "equity": "/results/실험8_huber-action-10pct/test/equity.csv",
+        "metrics": "/results/실험8_huber-action-10pct/test/metrics.json",
+        "summary": "/results/실험8_huber-action-10pct/summary.md"
+      }
+    },
+    {
+      "id": "실험7_huber-action-0p0-0p25-0p5-0p75-1p0",
+      "label": "실험7_huber-action-0p0-0p25-0p5-0p75-1p0",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-09T15:31:45.845414+00:00",
+      "best_episode": 89,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | 44.20% | 33.96% | 0.809 | 1.204 | 213 | 119.383 | 6.409 |",
+      "paths": {
+        "ohlcv": "/results/실험7_huber-action-0p0-0p25-0p5-0p75-1p0/ohlcv.csv",
+        "trades": "/results/실험7_huber-action-0p0-0p25-0p5-0p75-1p0/test/agent_trades.csv",
+        "equity": "/results/실험7_huber-action-0p0-0p25-0p5-0p75-1p0/test/equity.csv",
+        "metrics": "/results/실험7_huber-action-0p0-0p25-0p5-0p75-1p0/test/metrics.json",
+        "summary": "/results/실험7_huber-action-0p0-0p25-0p5-0p75-1p0/summary.md"
+      }
+    },
+    {
+      "id": "실험6_huber-action-0p0-1p0",
+      "label": "실험6_huber-action-0p0-1p0",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-09T15:27:19.743205+00:00",
+      "best_episode": 4,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | 3.84% | 40.26% | 0.202 | 0.299 | 191 | 190.137 | 2.403 |",
+      "paths": {
+        "ohlcv": "/results/실험6_huber-action-0p0-1p0/ohlcv.csv",
+        "trades": "/results/실험6_huber-action-0p0-1p0/test/agent_trades.csv",
+        "equity": "/results/실험6_huber-action-0p0-1p0/test/equity.csv",
+        "metrics": "/results/실험6_huber-action-0p0-1p0/test/metrics.json",
+        "summary": "/results/실험6_huber-action-0p0-1p0/summary.md"
+      }
+    },
+    {
+      "id": "실험5_huber-lr-0p0007",
+      "label": "실험5_huber-lr-0p0007",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-09T15:05:51.134380+00:00",
+      "best_episode": 89,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | -30.06% | 54.72% | -0.570 | -0.788 | 178 | 170.239 | 3.836 |",
+      "paths": {
+        "ohlcv": "/results/실험5_huber-lr-0p0007/ohlcv.csv",
+        "trades": "/results/실험5_huber-lr-0p0007/test/agent_trades.csv",
+        "equity": "/results/실험5_huber-lr-0p0007/test/equity.csv",
+        "metrics": "/results/실험5_huber-lr-0p0007/test/metrics.json",
+        "summary": "/results/실험5_huber-lr-0p0007/summary.md"
+      }
+    },
+    {
+      "id": "실험4_huber-lr-0p0003",
+      "label": "실험4_huber-lr-0p0003",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-09T14:53:29.648644+00:00",
+      "best_episode": 71,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | 10.73% | 36.50% | 0.335 | 0.501 | 232 | 201.247 | 2.926 |",
+      "paths": {
+        "ohlcv": "/results/실험4_huber-lr-0p0003/ohlcv.csv",
+        "trades": "/results/실험4_huber-lr-0p0003/test/agent_trades.csv",
+        "equity": "/results/실험4_huber-lr-0p0003/test/equity.csv",
+        "metrics": "/results/실험4_huber-lr-0p0003/test/metrics.json",
+        "summary": "/results/실험4_huber-lr-0p0003/summary.md"
+      }
+    },
+    {
+      "id": "실험3_huber-to-mae",
+      "label": "실험3_huber-to-mae",
+      "mode": "train",
+      "algorithm": "",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-09T14:26:09.335582+00:00",
+      "best_episode": 68,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | 46.86% | 26.93% | 0.980 | 1.552 | 272 | 195.427 | 2.325 |",
+      "paths": {
+        "ohlcv": "/results/실험3_huber-to-mae/ohlcv.csv",
+        "trades": "/results/실험3_huber-to-mae/test/agent_trades.csv",
+        "equity": "/results/실험3_huber-to-mae/test/equity.csv",
+        "metrics": "/results/실험3_huber-to-mae/test/metrics.json",
+        "summary": "/results/실험3_huber-to-mae/summary.md"
+      }
+    },
+    {
+      "id": "실험2_mse-to-huber",
+      "label": "실험2_mse-to-huber",
+      "mode": "train",
+      "algorithm": "",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-09T14:19:56.857358+00:00",
+      "best_episode": 5,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | 40.96% | 35.32% | 0.847 | 1.311 | 291 | 206.432 | 2.635 |",
+      "paths": {
+        "ohlcv": "/results/실험2_mse-to-huber/ohlcv.csv",
+        "trades": "/results/실험2_mse-to-huber/test/agent_trades.csv",
+        "equity": "/results/실험2_mse-to-huber/test/equity.csv",
+        "metrics": "/results/실험2_mse-to-huber/test/metrics.json",
+        "summary": "/results/실험2_mse-to-huber/summary.md"
+      }
+    },
+    {
+      "id": "실험1_기본",
+      "label": "실험1_기본",
+      "mode": "train",
+      "algorithm": "",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-09T13:36:24.484762+00:00",
+      "best_episode": 1,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | -14.80% | 44.21% | -0.231 | -0.325 | 311 | 178.623 | 3.017 |",
+      "paths": {
+        "ohlcv": "/results/실험1_기본/ohlcv.csv",
+        "trades": "/results/실험1_기본/test/agent_trades.csv",
+        "equity": "/results/실험1_기본/test/equity.csv",
+        "metrics": "/results/실험1_기본/test/metrics.json",
+        "summary": "/results/실험1_기본/summary.md"
+      }
+    },
+    {
+      "id": "실험13_huber-epsdecay-0p99999",
+      "label": "실험13_huber-epsdecay-0p99999",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-11T07:26:37.300672+00:00",
+      "best_episode": 23,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | -8.37% | 43.54% | -0.063 | -0.091 | 271 | 220.981 | 2.578 |",
+      "paths": {
+        "ohlcv": "/results/실험13_huber-epsdecay-0p99999/ohlcv.csv",
+        "trades": "/results/실험13_huber-epsdecay-0p99999/test/agent_trades.csv",
+        "equity": "/results/실험13_huber-epsdecay-0p99999/test/equity.csv",
+        "metrics": "/results/실험13_huber-epsdecay-0p99999/test/metrics.json",
+        "summary": "/results/실험13_huber-epsdecay-0p99999/summary.md"
+      }
+    },
+    {
+      "id": "실험12_huber-epsdecay-0p9999",
+      "label": "실험12_huber-epsdecay-0p9999",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-11T07:24:53.904412+00:00",
+      "best_episode": 21,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | -6.27% | 45.87% | -0.019 | -0.029 | 238 | 196.251 | 2.587 |",
+      "paths": {
+        "ohlcv": "/results/실험12_huber-epsdecay-0p9999/ohlcv.csv",
+        "trades": "/results/실험12_huber-epsdecay-0p9999/test/agent_trades.csv",
+        "equity": "/results/실험12_huber-epsdecay-0p9999/test/equity.csv",
+        "metrics": "/results/실험12_huber-epsdecay-0p9999/test/metrics.json",
+        "summary": "/results/실험12_huber-epsdecay-0p9999/summary.md"
+      }
+    },
+    {
+      "id": "실험11_huber-epsmin-0p03",
+      "label": "실험11_huber-epsmin-0p03",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-11T07:12:43.985223+00:00",
+      "best_episode": 1,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | -22.56% | 49.01% | -0.466 | -0.665 | 320 | 190.439 | 3.007 |",
+      "paths": {
+        "ohlcv": "/results/실험11_huber-epsmin-0p03/ohlcv.csv",
+        "trades": "/results/실험11_huber-epsmin-0p03/test/agent_trades.csv",
+        "equity": "/results/실험11_huber-epsmin-0p03/test/equity.csv",
+        "metrics": "/results/실험11_huber-epsmin-0p03/test/metrics.json",
+        "summary": "/results/실험11_huber-epsmin-0p03/summary.md"
+      }
+    },
+    {
+      "id": "실험10_huber-epsmin-0p01",
+      "label": "실험10_huber-epsmin-0p01",
+      "mode": "train",
+      "algorithm": "dqn",
+      "source": "kis",
+      "symbol": "005930",
+      "created_at_utc": "2026-09-11T07:04:16.354238+00:00",
+      "best_episode": 1,
+      "period": {
+        "first_execution": "2024-01-02",
+        "last_execution": "2025-12-30",
+        "steps": 486
+      },
+      "summary": "| agent | -22.56% | 49.01% | -0.466 | -0.665 | 320 | 190.439 | 3.007 |",
+      "paths": {
+        "ohlcv": "/results/실험10_huber-epsmin-0p01/ohlcv.csv",
+        "trades": "/results/실험10_huber-epsmin-0p01/test/agent_trades.csv",
+        "equity": "/results/실험10_huber-epsmin-0p01/test/equity.csv",
+        "metrics": "/results/실험10_huber-epsmin-0p01/test/metrics.json",
+        "summary": "/results/실험10_huber-epsmin-0p01/summary.md"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.Rhistory
+.env
+.env.*
+node_modules/
+dist/
+results/
+models/
+.DS_Store
