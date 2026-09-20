@@ -1,0 +1,133 @@
+{
+  "status": "complete",
+  "mode": "train",
+  "source": "kis",
+  "algorithm": "dqn",
+  "experiment_label": "huber-batch-32-target-1000",
+  "synthetic": false,
+  "symbol": "005930",
+  "created_at_utc": "2026-09-11T09:57:02.111254+00:00",
+  "input_rows": 2134,
+  "clean_rows": 2134,
+  "feature_rows": 2015,
+  "data_sha256": "d7046d1aa67abca7e18a847d2801ae4a93898b3fe57ce44fe63b72305c420453",
+  "periods": {
+    "train": {
+      "first_execution": "2018-07-26",
+      "last_execution": "2023-12-28",
+      "steps": 1338
+    },
+    "validation": {
+      "first_execution": "2024-01-02",
+      "last_execution": "2024-12-30",
+      "steps": 244
+    },
+    "test": {
+      "first_execution": "2025-01-02",
+      "last_execution": "2026-09-11",
+      "steps": 413
+    }
+  },
+  "state_features": [
+    "gap_return",
+    "intraday_return",
+    "high_low_range",
+    "close_position",
+    "close_ma5_ratio",
+    "close_ma20_ratio",
+    "close_ma60_ratio",
+    "close_ma120_ratio",
+    "ma5_ma20_ratio",
+    "ma20_ma60_ratio",
+    "ma60_ma120_ratio",
+    "rsi14_norm",
+    "atr14_ratio",
+    "volume_ma20_ratio",
+    "volume_change"
+  ],
+  "state_dim": 301,
+  "versions": {
+    "torch": "2.9.1",
+    "numpy": "2.5.0",
+    "pandas": "2.3.3",
+    "PyYAML": "6.0.2"
+  },
+  "python": "3.13.5",
+  "code_sha256": {
+    "agents/double_dqn.py": "a546eb7cde81941a7f2d6da05b2ab58030f0232f047cc98a758951acca671055",
+    "agents/dqn.py": "4af56d5754e2792bbaf1d9001e93c8e3e542db57a2e7a2d5d6e1314ec2d67f1c",
+    "agents/network.py": "1bd7264bcb6a3ad9fc0b8f1b1ca9ab15f6b63f52a9cf433df96827bd97f8919e",
+    "backtest/backtester.py": "56c3787436974cf64ab13c5fce3daaf9659360eab62aa7257c82ccd4d0ecb8a6",
+    "backtest/metrics.py": "7d8b6dd73b3bcdfa9658cb859540adb7f7ef03a6133fa5dc1249bb9a195023ad",
+    "broker/paper_broker.py": "910757f33c8b5bb1ad9de4d39233ef0946c889fddbc1540cfbcb83b66eab4b6e",
+    "broker/real_broker.py": "aa2cc3966cafe5e299b116df61d3977014e79b24478f4b62d6798b3555d8d14e",
+    "data/features.py": "b053876b6f414ab5310d08bceeeb5985e823a073748b685653957f6499b4ce8a",
+    "data/loader.py": "bf8ab091ba984a0d91ef1c441bca5a6e65462d82b514279cd3695a060967a114",
+    "data/preprocessing.py": "4a741e4a7429c38fb6bee5a91ac524792449b0158a38a9aaa848d980d0f79bfa",
+    "env/trading_env.py": "18bd7876d5254fd66f354d80c5ad2f76b3c957200fe6b027d330bdb7b0108575",
+    "main.py": "fbb24baeb9b0670d7cb4dab3952adb1b0ad700861a4e006da206bb444c71d730",
+    "tests/test_brokers.py": "6cba94e8c66ef01cb03adf065cfffc558ecbb19c136878d4f50115d179299739",
+    "tests/test_dqn.py": "1f7058c220b8c116b697324c4c311f3ad6d2fabec8b6ac2b423ce26a8b830664",
+    "tests/test_network.py": "b9065ad1d6684c97f9b892ee932f684f2238ca44e7317c5df416884c6e44c7f8",
+    "tests/test_pipeline.py": "b488d243b5dd6a974506a5a5b44e4831d7877c6a869ff7d95e0ac98639bb4097",
+    "tests/test_trading_env.py": "cfba15592c6f12a48a27b6bb1bd615b76f3f0bedfa7bad36fb879d149699e14e",
+    "tools/export_frontend_runs.py": "ac228b7027e4f46601f15006e6129ddc8bc3d7c4d85d59887f65495df1ff0b5a",
+    "tools/frontend_server.py": "7b9268eb90335bfe515139c0bc3d286eca0ae2286f16e171661e18056f33f537",
+    "tools/walk_forward_batch_series.py": "edb1e0a91c39def81204367eada81f5e09c07a381e1c1e4d60602aea3e25582a",
+    "tools/walk_forward_compare.py": "cb691c4a7ee3d4129c8846eb95584edefe007e898331af065b66d684457ded00",
+    "tools/walk_forward_gamma_series.py": "82ada5c76bacb928ca08a788315b9a41989e7e8035ada4c6e3490ed408e3730f",
+    "tools/walk_forward_seed_series.py": "cfbf8f90c11836167844063041c260fe1e6b48cf6a0f7b2ecd56fe4eeb6f333f",
+    "tools/walk_forward_target_series.py": "3389b4e5e517d0eca927d9b6aa84a18de29476119298964be333dfcfca65772b",
+    "training/evaluate.py": "cdde732e0303c068980843190bf5e68f668a409213d6139d7a132e6d37b4e67a",
+    "training/train.py": "e546b6de27f760477bd707b0690099e44e37bee5e3672dde1597a53932d15f9c"
+  },
+  "notes": [],
+  "best_episode": 89,
+  "checkpoint": "/Users/hawnwoongku/Desktop/auto_trading/backend/results/\uc2e4\ud5d823_target-1000/val2024/models/dqn_model.pth",
+  "environment_steps": 133800,
+  "learning_steps": 133545,
+  "test_metrics": {
+    "agent": {
+      "cumulative_return": 0.1298925790000005,
+      "mdd": 0.202434646806675,
+      "sharpe_ratio": 0.39216215543060834,
+      "sortino_ratio": 0.5766019633901734,
+      "trade_count": 140,
+      "turnover": 126.19957405546188,
+      "initial_asset": 10000000.0,
+      "final_asset": 11298925.790000005,
+      "steps": 413,
+      "average_holding_days": 1.4140986132511557,
+      "closed_shares": 7788,
+      "open_shares": 0
+    },
+    "cash": {
+      "cumulative_return": 0.0,
+      "mdd": 0.0,
+      "sharpe_ratio": null,
+      "sortino_ratio": null,
+      "trade_count": 0,
+      "turnover": 0.0,
+      "initial_asset": 10000000.0,
+      "final_asset": 10000000.0,
+      "steps": 413,
+      "average_holding_days": null,
+      "closed_shares": 0,
+      "open_shares": 0
+    },
+    "buy_and_hold": {
+      "cumulative_return": 3.9083705955,
+      "mdd": 0.42872643819733514,
+      "sharpe_ratio": 1.8852643698822327,
+      "sortino_ratio": 3.0036798271692984,
+      "trade_count": 1,
+      "turnover": 0.99603,
+      "initial_asset": 10000000.0,
+      "final_asset": 49083705.955,
+      "steps": 413,
+      "average_holding_days": null,
+      "closed_shares": 0,
+      "open_shares": 189
+    }
+  }
+}

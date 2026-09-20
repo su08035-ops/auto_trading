@@ -1,0 +1,44 @@
+{
+  "agent": {
+    "cumulative_return": 0.038399952999999654,
+    "mdd": 0.402562878219784,
+    "sharpe_ratio": 0.201750484042036,
+    "sortino_ratio": 0.29928673341701034,
+    "trade_count": 191,
+    "turnover": 190.13663506489195,
+    "initial_asset": 10000000.0,
+    "final_asset": 10383999.529999996,
+    "steps": 486,
+    "average_holding_days": 2.4027538726333906,
+    "closed_shares": 10458,
+    "open_shares": 86
+  },
+  "cash": {
+    "cumulative_return": 0.0,
+    "mdd": 0.0,
+    "sharpe_ratio": null,
+    "sortino_ratio": null,
+    "trade_count": 0,
+    "turnover": 0.0,
+    "initial_asset": 10000000.0,
+    "final_asset": 10000000.0,
+    "steps": 486,
+    "average_holding_days": null,
+    "closed_shares": 0,
+    "open_shares": 0
+  },
+  "buy_and_hold": {
+    "cumulative_return": 0.529441029,
+    "mdd": 0.4290804340250082,
+    "sharpe_ratio": 0.830133230788471,
+    "sortino_ratio": 1.259060265185744,
+    "trade_count": 1,
+    "turnover": 0.99314,
+    "initial_asset": 10000000.0,
+    "final_asset": 15294410.29,
+    "steps": 486,
+    "average_holding_days": null,
+    "closed_shares": 0,
+    "open_shares": 127
+  }
+}

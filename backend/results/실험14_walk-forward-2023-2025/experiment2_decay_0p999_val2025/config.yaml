@@ -1,0 +1,106 @@
+project:
+  name: auto_trading
+  research_question: 'Does the stepwise application of market-state features, trading
+    costs, and Double DQN reduce overtrading and downside risk in a trading policy?
+
+    '
+data:
+  source: kis
+  symbol: 005930
+  name: Samsung Electronics
+  start_date: '2018-01-01'
+  validation_start: '2025-01-01'
+  split_date: '2026-01-01'
+  end_date: '2026-09-11'
+  synthetic_seed: 0
+  market: J
+  period: D
+  adjusted_price_code: '0'
+kis_api:
+  environment: real
+  base_url: https://openapi.koreainvestment.com:9443
+  app_key_env: KIS_APP_KEY
+  app_secret_env: KIS_APP_SECRET
+  access_token_env: KIS_ACCESS_TOKEN
+state:
+  window: 20
+  market_features:
+    ohlc:
+    - gap_return
+    - intraday_return
+    - high_low_range
+    - close_position
+    trend:
+    - close_ma5_ratio
+    - close_ma20_ratio
+    - close_ma60_ratio
+    - close_ma120_ratio
+    - ma5_ma20_ratio
+    - ma20_ma60_ratio
+    - ma60_ma120_ratio
+    momentum:
+    - rsi14_norm
+    volatility:
+    - atr14_ratio
+    volume:
+    - volume_ma20_ratio
+    - volume_change
+  portfolio_features:
+  - position_ratio
+action:
+  type: target_position
+  values:
+  - 0.0
+  - 0.5
+  - 1.0
+reward:
+  type: log_return
+  formula: log(next_asset / current_asset)
+environment:
+  initial_balance: 10000000
+  commission: 0.00015
+  tax: 0.0025
+  min_holding_days: 0
+agent:
+  algorithm: dqn
+  hidden_dim: 128
+  optimizer: adam
+  loss: huber
+  gamma: 0.99
+  learning_rate: 0.001
+  batch_size: 64
+  replay_buffer_size: 20000
+  target_update_interval: 500
+  epsilon_start: 1.0
+  epsilon_min: 0.05
+  epsilon_decay: 0.999
+training:
+  episodes: 100
+  seed: 42
+  learning_starts: 256
+  train_frequency: 1
+  gradient_steps: 1
+  torch_threads: 1
+  selection_metric: cumulative_return
+evaluation:
+  periods_per_year: 252
+  annual_risk_free_rate: 0.0
+  benchmarks:
+  - cash
+  - buy_and_hold
+  metrics:
+  - cumulative_return
+  - mdd
+  - sharpe_ratio
+  - sortino_ratio
+  - trade_count
+  - turnover
+  - average_holding_days
+paths:
+  runs_dir: results
+  model_file: models/dqn_model.pth
+broker:
+  mode: paper
+  allow_orders: false
+  account_env: KIS_ACCOUNT_NO
+  product_code_env: KIS_ACCOUNT_PRODUCT_CODE
